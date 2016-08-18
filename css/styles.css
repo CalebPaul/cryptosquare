@@ -1,11 +1,12 @@
 .well {
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
-  background-image: url(http://2.bp.blogspot.com/-2TPvTaPy9Jw/UNPBgpmcBlI/AAAAAAAAAH8/IGMexPMs6J0/s1600/where+are+my+glasses.jpg);
+  background-image: url(../img/dino.png);
 }
 
 #output {
-  margin-top: 7em;
+  margin-left: 4em;
 }
