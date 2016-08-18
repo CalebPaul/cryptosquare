@@ -1,11 +1,24 @@
-var topPGs = [
-/* Index 0 */  ['CP3', 'Clippers'], //that comma is important!
-/* Index 1 */  ['Steph', 'Golden State'],
-/* Index 2 */  ['Westbrook', 'OKC'],
-/* Index 3 */  ['Dame', 'Portland'],
-/* Index 4 */  ['Wall', 'Washington']
-]
-alert([topPGs[1][0]]);
+function coder(input) {
+  var codeArray = input.toLowerCase().replace(/[^a-z0-9]/g, "").split("");
+  var row = Math.ceil(Math.sqrt(codeArray.length));
+  var col = Math.floor(Math.sqrt(codeArray.length));
+  var code = "";
+  for (var i = 0; i < col; i++) {
+    for (var j = 0; j < row; j++) {
+      if(j === 3) {
+        code += " ";
+      }
+      if(((j*col) + i) < codeArray.length) {
+        code += codeArray[(j*col) + i];
+      }
+      else {
+        console.log(codeArray[j*col + i]);
+      }
+    }
+  }
+  return code;
+}
+
 $(function() {
   $("form").submit(function(event) {
     event.preventDefault();

@@ -1,3 +1,11 @@
 .well {
   text-align: center;
 }
+
+body {
+  background-image: url(http://2.bp.blogspot.com/-2TPvTaPy9Jw/UNPBgpmcBlI/AAAAAAAAAH8/IGMexPMs6J0/s1600/where+are+my+glasses.jpg);
+}
+
+#output {
+  margin-top: 7em;
+}
